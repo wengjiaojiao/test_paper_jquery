@@ -1,13 +1,11 @@
 [].forEach.call($(":input[name=radio1]"), function(item, i) {
   item.onclick = function () {
-      //document.getElementById("answer1").value = item.value;
       $(":input[id=answer1]").prop("value", item.value);
   };
 });
 [].forEach.call($(":input[name=radio2]"), function(item, i) {
   item.onclick = function () {
-      //document.getElementById("answer2").value = item.value;
-      $(":input[id=answer1]").prop("value", item.value);    
+      $(":input[id=answer1]").prop("value", item.value);
   };
 });
 [].forEach.call($(":input[name=checkbox1]"), function(item, i) {
