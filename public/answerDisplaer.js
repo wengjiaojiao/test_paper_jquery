@@ -5,7 +5,7 @@
 });
 [].forEach.call($(":input[name=radio2]"), function(item, i) {
   item.onclick = function () {
-      $(":input[id=answer1]").prop("value", item.value);
+      $(":input[id=answer2]").prop("value", item.value);
   };
 });
 [].forEach.call($(":input[name=checkbox1]"), function(item, i) {
