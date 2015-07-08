@@ -1,6 +1,5 @@
 $("#submit").on("click",function(evt){
     window.scroll(0,0);
-    //evt.preventDefault();
     if($(":input[id=class]").val() == "") {
         alert("请输入班级");
         evt.preventDefault();
