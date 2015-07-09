@@ -1,5 +1,5 @@
 var AllQuestionBank = require('./questionBank');
-var _ = require("./public/lodash.src.js");
+var _ = require("./lodash.src.js");
 
 function scoreGetter(infors){
   var questionBanks = AllQuestionBank();
