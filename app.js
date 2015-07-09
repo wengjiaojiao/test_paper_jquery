@@ -2,7 +2,6 @@ var express = require('express')
 var app = express()
 var ejs = require('ejs');
 var bodyParser = require('body-parser');
-var _ = require('./public/lodash.src.js');
 var scoreGetter = require('./scoreGetter');
 
 app.use(bodyParser.urlencoded({
@@ -21,7 +20,7 @@ app.post('/result', function(req, res) {
   var infors = req.body;
   var sumScore = scoreGetter(infors);
 
-  console.log(sumScore);
+  //console.log(sumScore);
   res.send(sumScore + "");
 
 
